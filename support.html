@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brasstally, Support</title>
+<style>
+  :root {
+    --paper:#faf6f1; --ink:#1a1511; --ink2:#5a544f; --ink3:#958e88;
+    --accent:#82502b; --rule:#dedad4; --card:#ffffff;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--paper); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    padding:0 20px;
+  }
+  main { max-width:680px; margin:0 auto; padding:56px 0 96px; }
+  h1 {
+    font-family:"Newsreader",Georgia,serif; font-weight:600; font-style:italic;
+    font-size:34px; margin:0 0 4px;
+  }
+  .sub { color:var(--accent); font-size:12px; letter-spacing:.12em;
+         text-transform:uppercase; font-weight:600; margin-bottom:8px; }
+  h2 {
+    font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:21px;
+    margin:38px 0 6px; padding-top:22px; border-top:1px solid var(--rule);
+  }
+  h3 { font-size:15px; margin:22px 0 4px; color:var(--ink); }
+  p, li { color:var(--ink2); }
+  strong { color:var(--ink); }
+  ul { padding-left:20px; }
+  li { margin:6px 0; }
+  a { color:var(--accent); }
+  .lede {
+    background:var(--card); border:1px solid var(--rule); border-radius:14px;
+    padding:20px 22px; font-size:17px; color:var(--ink); margin-bottom:8px;
+  }
+  .contact {
+    background:var(--card); border:1px solid var(--rule); border-radius:14px;
+    padding:20px 22px; margin-top:28px;
+  }
+  footer { margin-top:48px; color:var(--ink3); font-size:13px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="sub">Brasstally</div>
+  <h1>Support</h1>
+
+  <p class="lede">
+    Brasstally logs your business miles automatically and works out your
+    mileage deduction. If something is not behaving, start here. Most
+    questions come down to one of the first three answers.
+  </p>
+
+  <h2>Drives are not being detected</h2>
+  <p>
+    Almost always location permission. Automatic detection needs
+    <strong>Always</strong>, not "While Using the App", because the whole
+    point is that it works with the app closed.
+  </p>
+  <ul>
+    <li>Open iPhone <strong>Settings > Brasstally > Location</strong> and
+        choose <strong>Always</strong>.</li>
+    <li>In Brasstally, open <strong>Settings</strong>. The dot next to
+        Location is green when it is set correctly and red when it is not.</li>
+    <li>Make sure <strong>Detect &amp; record drives automatically</strong>
+        is switched on.</li>
+    <li>Low Power Mode can delay the wake-up, so drives may start recording a
+        little later than usual.</li>
+  </ul>
+  <p>
+    To check the recorder without waiting for a real trip, tap
+    <strong>Start trip recording</strong> on the Drives tab and drive around
+    the block. Same engine, triggered by hand.
+  </p>
+
+  <h2>The mileage looks low, or a short trip is missing</h2>
+  <p>
+    Trips under <strong>0.3 miles</strong> are ignored on purpose, and the
+    app waits for about 250 metres at driving speed before it commits to
+    recording. That keeps walking and parking-lot manoeuvres out of your log.
+    If a drive starts underground, recording begins at the first GPS fix,
+    which is usually within a block of the true start. You can correct any
+    drive by tapping it and editing the distance.
+  </p>
+
+  <h2>A trip was split in two, or ended early</h2>
+  <p>
+    A drive ends after about five minutes stopped. Brasstally tries to tell a
+    traffic jam apart from a real destination and will hold a trip open much
+    longer when it can see you creeping forward. If a trip still gets split,
+    edit one and delete the other, or add a single replacement from the
+    <strong>Add</strong> tab.
+  </p>
+
+  <h2>Moving data in from another app</h2>
+  <p>
+    <strong>Settings > Import data</strong> accepts JSON and CSV.
+  </p>
+  <ul>
+    <li>Coming from the Brasstally web app, use its
+        <strong>Export all data (JSON)</strong>. That is the lossless one and
+        carries drives, vehicles, saved places, clients and your rate.</li>
+    <li>CSV from other mileage apps works too. Column names are matched
+        loosely; it needs a date column and a miles column.</li>
+    <li><strong>Merge</strong> keeps what is already on your phone and skips
+        duplicates. <strong>Replace</strong> overwrites everything.</li>
+  </ul>
+
+  <h2>Backing up</h2>
+  <p>
+    Your data lives only on your phone, so nothing is backed up to us. Use
+    <strong>Settings > Export backup (JSON)</strong> now and then and keep the
+    file somewhere safe. It is the only copy that survives deleting the app.
+  </p>
+
+  <h2>Pro subscription</h2>
+  <h3>What Pro adds</h3>
+  <ul>
+    <li>Rules that classify drives automatically as they are detected</li>
+    <li>The actual-expense method, compared against standard mileage</li>
+    <li>A CPA-ready IRS tax packet PDF</li>
+    <li>Unlimited vehicles, each with its own expenses and deduction</li>
+  </ul>
+  <h3>Restoring a purchase</h3>
+  <p>
+    On a new phone, or after reinstalling, open the Pro screen and tap
+    <strong>Restore purchase</strong>.
+  </p>
+  <h3>Cancelling</h3>
+  <p>
+    Pro is $34.99 per year and renews until cancelled. Cancel any time in
+    iPhone <strong>Settings > your name > Subscriptions</strong>. Everything
+    you have already recorded stays yours, and CSV export keeps working after
+    Pro ends.
+  </p>
+
+  <h2>Is the deduction figure tax advice?</h2>
+  <p>
+    No. Brasstally does the arithmetic from the miles you record using the
+    IRS standard rate for that year, and can compare it against the
+    actual-expense method. It is a record-keeping tool, not a tax
+    professional. Check your return with an accountant. IRS Publication 463
+    covers vehicle deductions.
+  </p>
+
+  <div class="contact">
+    <h3 style="margin-top:0">Still stuck?</h3>
+    <p style="margin-bottom:0">
+      Email <a href="mailto:saintstouch.photography@gmail.com">saintstouch.photography@gmail.com</a>.
+      Tell me your iPhone model, your iOS version, and what you expected to
+      happen. If it is about a specific drive, a screenshot helps.
+      I read every message.
+    </p>
+  </div>
+
+  <p style="margin-top:28px">
+    <a href="privacy.html">Privacy Policy</a>
+  </p>
+
+  <footer>Brasstally</footer>
+</main>
+</body>
+</html>
